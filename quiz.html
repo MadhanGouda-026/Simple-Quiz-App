@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming & Aptitude Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+
+    <div class="quiz-container" id="welcome-container">
+        <h1 style="text-align: center;">Welcome to my Quiz App!</h1>
+        <p style="text-align: center; font-size: 1.1rem;">Click 'Start' to test your knowledge.</p>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container hidden" id="difficulty-container">
+        <h2 style="text-align: center;">Choose your difficulty level:</h2>
+        <p style="text-align: center; font-size: 1rem; color: #555;">(Each level has 15 questions)</p>
+        <button class="difficulty-btn" id="easy-btn">Easy</button>
+        <button class="difficulty-btn" id="intermediate-btn">Intermediate</button>
+        <button class="difficulty-btn" id="hard-btn">Hard</button>
+    </div>
+
+    <div class="quiz-container hidden" id="main-quiz-container">
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <p id="question-counter">Question 1 of 15</p>
+        </div>
+        
+        <div id="question-container">
+            <h2 id="question">Question text goes here</h2>
+        </div>
+        <div id="answer-container">
+            <ul id="answer-list">
+                </ul>
+        </div>
+        <button id="submit-btn">Submit Answer</button>
+    </div>
+
+    <div class="quiz-container hidden" id="results-container">
+        <h2 style="text-align: center;">Quiz Completed!</h2>
+        
+        <p id="score-text">You scored 0 out of 15</p>
+        
+        <p id="percentage-text">Your skill is 0%</p>
+        
+        <button id="reload-btn">Try Again</button>
+    </div>
+
+</body>
+</html>
